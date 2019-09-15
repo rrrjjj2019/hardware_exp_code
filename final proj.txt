@@ -1,0 +1,19 @@
+num=10;
+den=[1 2 4];
+wc = 0.01;
+while( abs(polyval(num, jwc)/polyval(den, jwc)) - sqrt(alpha) > 0.0001)
+    wc = wc+0.001
+end
+
+margin(sys)-->sys=open
+angle((polyval(num, jwc)/polyval(den, jwc)) )
+-----------------------------------------
+s=syms s;
+det([1 s; 2s 1])
+//
+//  =det|1  s| =1-2s*s
+//      |2s 1|
+//
+//
+-------------------------------------------
+s=tf('s');

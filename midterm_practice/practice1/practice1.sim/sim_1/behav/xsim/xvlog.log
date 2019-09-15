@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/midterm_practice/practice1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divn
+INFO: [VRFC 10-311] analyzing module Clock_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/midterm_practice/Clock_Divider_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Divider_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/midterm_practice/practice1/practice1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

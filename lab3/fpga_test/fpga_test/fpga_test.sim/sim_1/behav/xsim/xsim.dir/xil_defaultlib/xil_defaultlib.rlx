@@ -1,0 +1,7 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v,1539609903,verilog,,D:/verilog/hardware_exp/lab3/Parameterized_ping_pong_counter_fpga_t.v,,Parameterized_Ping_Pong_Counter;clock_divider;debounce;fpga;onepulse,,,,,,,,
+D:/verilog/hardware_exp/lab3/Parameterized_ping_pong_counter_fpga_t.v,1539438026,verilog,,,,Ping_Pong_Counter_fpga_t,,,,,,,,
+D:/verilog/hardware_exp/lab3/fpga_test/fpga_test/fpga_test.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,

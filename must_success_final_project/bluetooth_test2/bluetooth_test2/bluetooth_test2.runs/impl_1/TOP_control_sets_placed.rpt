@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Jan  3 16:22:21 2019
+| Host         : asus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            2 |
+|      8 |            5 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           10 |
+| No           | No                    | Yes                    |              40 |            6 |
+| No           | Yes                   | No                     |              66 |           10 |
+| Yes          | No                    | No                     |              18 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              34 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------------------+--------------------------------+------------------+----------------+
+|    Clock Signal   |             Enable Signal             |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------+---------------------------------------+--------------------------------+------------------+----------------+
+|  I_RS232RX/RxDone |                                       |                                |                1 |              2 |
+|  load_BUFG        |                                       | I_RS232RX/start_bit3_out       |                1 |              2 |
+|  load_BUFG        | I_RS232RX/FSM_sequential_State_reg__1 |                                |                1 |              2 |
+|  load_BUFG        | I_RS232TX/Tx_i_2_n_0                  | I_RS232TX/stop_bit             |                1 |              2 |
+|  load_BUFG        |                                       | I_RS232RX/start_bit            |                1 |              4 |
+|  Clk_IBUF_BUFG    |                                       |                                |                1 |              4 |
+|  load_BUFG        |                                       |                                |                3 |              8 |
+|  load_BUFG        | I_RS232TX/Bit[3]_i_2_n_0              | I_RS232TX/Bit[3]_i_1_n_0       |                1 |              8 |
+|  load_BUFG        | I_RS232RX/Bit                         | I_RS232RX/start_bit            |                1 |              8 |
+|  load_BUFG        | I_RS232RX/FSM_sequential_State_reg__1 | I_RS232RX/counter              |                1 |              8 |
+|  load_BUFG        | I_RS232TX/State                       | I_RS232TX/counter[3]_i_1_n_0   |                2 |              8 |
+|  c/CLK            |                                       |                                |                5 |             16 |
+|  load_BUFG        | I_RS232RX/Bit                         |                                |                3 |             16 |
+|  c/CLK            |                                       | I_BAUDGEN/baudRateReg_reg[0]_0 |                6 |             40 |
+|  Clk_IBUF_BUFG    |                                       | c/counter_p[30]_i_1_n_0        |                8 |             60 |
++-------------------+---------------------------------------+--------------------------------+------------------+----------------+
+
+

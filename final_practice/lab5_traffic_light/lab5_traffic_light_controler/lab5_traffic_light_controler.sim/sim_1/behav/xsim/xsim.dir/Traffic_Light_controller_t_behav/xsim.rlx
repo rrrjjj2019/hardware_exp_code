@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5160511775022205837  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 865d8acbb88c4dafa197e86dfdf523db --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Traffic_Light_controller_t_behav xil_defaultlib.Traffic_Light_controller_t xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "E:\\XILINX\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Traffic_Light_controller_t_behav/xsimk.exe\"   \"xsim.dir/Traffic_Light_controller_t_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Traffic_Light_controller_t_behav/obj/xsim_1.win64.obj\" \"E:\\XILINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"E:\\XILINX\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

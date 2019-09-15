@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 15 16:13:50 2018
+# Process ID: 19784
+# Current directory: D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26320 D:\verilog\hardware_exp\lab5\basic1_piano\basic1_piano\basic1_piano.xpr
+# Log file: D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano/vivado.log
+# Journal file: D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano/basic1_piano.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano/basic1_piano.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano/basic1_piano.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic1_piano/basic1_piano/basic1_piano.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_project
+create_project basic4 D:/verilog/hardware_exp/lab5/basic4/basic4 -part xc7a35tcpg236-1
+add_files -norecurse {D:/verilog/hardware_exp/lab5/basic4/SampleDisplay.v D:/verilog/hardware_exp/lab5/basic4/KeyboardDecoder.v D:/verilog/hardware_exp/lab5/basic4/PWM.v D:/verilog/hardware_exp/lab5/basic4/Music.v D:/verilog/hardware_exp/lab5/basic4/SevenSegment.v D:/verilog/hardware_exp/lab5/basic4/OnePulse.v D:/verilog/hardware_exp/lab5/basic4/TOP.v D:/verilog/hardware_exp/lab5/basic4/PlayerCtrl.v}
+add_files -fileset constrs_1 -norecurse {{D:/verilog/hardware_exp/lab5/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc} {D:/verilog/hardware_exp/lab5/demo2_music box/Unit9_demo2_music box/constraints.xdc}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/verilog/hardware_exp/lab5/basic4/SevenSegment.v] -no_script -reset -force -quiet
+remove_files  D:/verilog/hardware_exp/lab5/basic4/SevenSegment.v
+add_files -norecurse {{D:/verilog/hardware_exp/lab5/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v}}
+update_compile_order -fileset sources_1
+set_property top TOP [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files D:/verilog/hardware_exp/lab5/basic4/SampleDisplay.v] -no_script -reset -force -quiet
+remove_files  D:/verilog/hardware_exp/lab5/basic4/SampleDisplay.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property  ip_repo_paths  {{D:/verilog/hardware_exp/lab5/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/ip}} [current_project]
+update_ip_catalog
+create_ip -name KeyboardCtrl -vendor xilinx.com -library user -version 1.0 -module_name KeyboardCtrl_0 -dir d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+generate_target all [get_files  d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+catch { config_ip_cache -export [get_ips -all KeyboardCtrl_0] }
+export_ip_user_files -of_objects [get_files d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+launch_runs -jobs 4 KeyboardCtrl_0_synth_1
+export_simulation -of_objects [get_files d:/verilog/hardware_exp/lab5/basic4/basic4/basic4.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci] -directory D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.ip_user_files -ipstatic_source_dir D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.cache/compile_simlib/modelsim} {questa=D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.cache/compile_simlib/questa} {riviera=D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.cache/compile_simlib/riviera} {activehdl=D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/verilog/hardware_exp/lab5/basic4/basic4/basic4.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

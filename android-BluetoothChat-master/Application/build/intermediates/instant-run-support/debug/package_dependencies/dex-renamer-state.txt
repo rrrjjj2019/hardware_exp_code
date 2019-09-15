@@ -1,0 +1,4 @@
+#Sat Dec 29 11:37:15 CST 2018
+base.0=D\:\\verilog\\hardware_exp\\android-BluetoothChat-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+path.0=classes.dex
+renamed.0=classes.dex

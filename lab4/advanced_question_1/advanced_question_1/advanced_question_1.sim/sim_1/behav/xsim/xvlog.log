@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab4/Lab4_TeamX_Mealy_Sequence_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mealy_Sequence_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab4/Lab4_TeamX_Mealy_Sequence_Detector_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mealy_t

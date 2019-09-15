@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module onepulse
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-311] analyzing module Parameterized_Ping_Pong_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Parameterized_ping_pong_counter_fpga_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ping_Pong_Counter_fpga_t

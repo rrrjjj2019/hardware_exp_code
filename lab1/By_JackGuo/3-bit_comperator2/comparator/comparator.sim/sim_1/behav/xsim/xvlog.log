@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab1/By_JackGuo/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fanout
+INFO: [VRFC 10-311] analyzing module Comparator_3bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab1/By_JackGuo/3-bit_comperator2/comparator/comparator.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

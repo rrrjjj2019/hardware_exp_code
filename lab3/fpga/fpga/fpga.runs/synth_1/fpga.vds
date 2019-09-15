@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov  2 16:43:27 2018
+# Process ID: 15220
+# Current directory: D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.runs/synth_1
+# Command line: vivado.exe -log fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga.tcl
+# Log file: D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.runs/synth_1/fpga.vds
+# Journal file: D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fpga.tcl -notrace
+Command: synth_design -top fpga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13484 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 355.680 ; gain = 99.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:189]
+	Parameter N bound to: 33554432 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element counter_n_reg was removed.  [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:225]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:189]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:189]
+	Parameter N bound to: 32768 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element counter_n_reg was removed.  [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:225]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (1#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:189]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:160]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:175]
+INFO: [Synth 8-6157] synthesizing module 'Parameterized_Ping_Pong_Counter' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'Parameterized_Ping_Pong_Counter' (4#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'fpga' (5#1) [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.461 ; gain = 154.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.461 ; gain = 154.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 410.461 ; gain = 154.148
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.srcs/constrs_1/new/LAB3_FPGA.xdc]
+Finished Parsing XDC File [D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.srcs/constrs_1/new/LAB3_FPGA.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.srcs/constrs_1/new/LAB3_FPGA.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 737.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "pb_debounced" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'sel_reg' in module 'fpga'
+INFO: [Synth 8-5544] ROM "out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_sel_reg' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_sel_reg' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:92]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                 iSTATE1 |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sel_reg' using encoding 'sequential' in module 'fpga'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_sel_reg' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'AN_reg' [D:/verilog/hardware_exp/lab3/Lab3_TeamX_Parameterized_Ping_Pong_Counter_fpga.v:93]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance '_clk_count' (clock_divider) to '_clk_onepluse'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               31 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	   6 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fpga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	   6 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+Module clock_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module onepulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Parameterized_Ping_Pong_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "O30" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_next_sel_reg[1]) is unused and will be removed from module fpga.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_next_sel_reg[0]) is unused and will be removed from module fpga.
+WARNING: [Synth 8-3332] Sequential element (AN_reg[3]) is unused and will be removed from module fpga.
+WARNING: [Synth 8-3332] Sequential element (AN_reg[2]) is unused and will be removed from module fpga.
+WARNING: [Synth 8-3332] Sequential element (AN_reg[1]) is unused and will be removed from module fpga.
+WARNING: [Synth 8-3332] Sequential element (AN_reg[0]) is unused and will be removed from module fpga.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 737.414 ; gain = 481.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |    10|
+|5     |LUT3   |     4|
+|6     |LUT4   |    16|
+|7     |LUT5   |    15|
+|8     |LUT6   |    24|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    83|
+|11    |LDC    |     6|
+|12    |LDP    |     1|
+|13    |IBUF   |    12|
+|14    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------------------+------+
+|      |Instance       |Module                          |Cells |
++------+---------------+--------------------------------+------+
+|1     |top            |                                |   202|
+|2     |  _clk_count   |clock_divider                   |    50|
+|3     |  _clk_display |clock_divider__parameterized0   |    51|
+|4     |  deb_flip     |debounce                        |     6|
+|5     |  deb_reset    |debounce_0                      |     6|
+|6     |  one_flip     |onepulse                        |     2|
+|7     |  one_reset    |onepulse_1                      |     5|
+|8     |  pppc         |Parameterized_Ping_Pong_Counter |    44|
++------+---------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 755.578 ; gain = 172.313
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 755.578 ; gain = 499.266
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 755.578 ; gain = 512.273
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/verilog/hardware_exp/lab3/fpga/fpga/fpga.runs/synth_1/fpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_utilization_synth.rpt -pb fpga_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 755.578 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  2 16:43:56 2018...

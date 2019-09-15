@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab2/Lab2_NOR_Implement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR_Implement
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab2/NOR_Implement_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_Implement_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab2/basic_question_1/basic_question_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

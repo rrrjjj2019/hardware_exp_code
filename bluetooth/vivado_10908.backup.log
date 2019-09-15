@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan  4 00:05:26 2019
+# Process ID: 10908
+# Current directory: D:/verilog/hardware_exp/bluetooth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6780 D:\verilog\hardware_exp\bluetooth\bluetooth.xpr
+# Log file: D:/verilog/hardware_exp/bluetooth/vivado.log
+# Journal file: D:/verilog/hardware_exp/bluetooth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog/hardware_exp/bluetooth/bluetooth.xpr
+INFO: [Project 1-313] Project file moved from 'D:/hardware_experiment/final proj/bluetooth/bluetooth' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/verilog/hardware_exp/UART_baudrate_generator.v', nor could it be found using path 'D:/hardware_experiment/final proj/bluetooth/UART_baudrate_generator.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/verilog/hardware_exp/UART_rx.v', nor could it be found using path 'D:/hardware_experiment/final proj/bluetooth/UART_rx.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/verilog/hardware_exp/UART_tx.v', nor could it be found using path 'D:/hardware_experiment/final proj/bluetooth/UART_tx.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/verilog/hardware_exp/TOP.v', nor could it be found using path 'D:/hardware_experiment/final proj/bluetooth/TOP.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XILINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 780.824 ; gain = 51.773
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  4 00:07:05 2019...

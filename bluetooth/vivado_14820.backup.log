@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan  4 00:09:03 2019
+# Process ID: 14820
+# Current directory: D:/verilog/hardware_exp/bluetooth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11048 D:\verilog\hardware_exp\bluetooth\bluetooth.xpr
+# Log file: D:/verilog/hardware_exp/bluetooth/vivado.log
+# Journal file: D:/verilog/hardware_exp/bluetooth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog/hardware_exp/bluetooth/bluetooth.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/verilog/hardware_exp/UART_baudrate_generator.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/verilog/hardware_exp/UART_rx.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/verilog/hardware_exp/UART_tx.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/verilog/hardware_exp/TOP.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XILINX/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 763.695 ; gain = 81.262
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  4 00:10:08 2019...

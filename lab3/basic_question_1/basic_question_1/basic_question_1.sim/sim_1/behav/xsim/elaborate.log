@@ -1,0 +1,17 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 483106ff9da54f9f9dd4cbe2b3aa537e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Clock_Divider_t_behav xil_defaultlib.Clock_Divider_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divn(N=2)
+Compiling module xil_defaultlib.divn(N=4)
+Compiling module xil_defaultlib.divn(N=8)
+Compiling module xil_defaultlib.divn(N=3)
+Compiling module xil_defaultlib.Clock_Divider
+Compiling module xil_defaultlib.Clock_Divider_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Clock_Divider_t_behav

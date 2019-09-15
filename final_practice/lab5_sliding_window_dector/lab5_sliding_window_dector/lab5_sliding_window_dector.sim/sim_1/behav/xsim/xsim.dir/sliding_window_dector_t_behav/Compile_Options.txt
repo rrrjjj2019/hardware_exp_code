@@ -1,0 +1,1 @@
+-wto "8a90a1c22e1741d8b1e8032fb3e64653" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "sliding_window_dector_t_behav" "xil_defaultlib.sliding_window_dector_t" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab4/Lab4_Moore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Moore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab4/Moore_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Moore_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab4/basic_question_1/basic_question_1/basic_question_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

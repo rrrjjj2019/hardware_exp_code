@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Jan  4 23:00:42 2019
+| Host         : asus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      6 |            3 |
+|      8 |            3 |
+|     10 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |            6 |
+| No           | No                    | Yes                    |             158 |           20 |
+| No           | Yes                   | No                     |              72 |           14 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              20 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------+--------------------------+-------------------------------------------------+------------------+----------------+
+|                   Clock Signal                   |       Enable Signal      |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++--------------------------------------------------+--------------------------+-------------------------------------------------+------------------+----------------+
+|  motor_dir_reg/G0                                |                          |                                                 |                1 |              2 |
+|  I_RS232RX/FSM_sequential_present_state_reg[2]_0 |                          | I_RS232RX/FSM_sequential_present_state_reg[2]_3 |                1 |              2 |
+|  I_RS232RX/FSM_sequential_present_state_reg[0]_0 |                          | I_RS232RX/FSM_sequential_present_state_reg[0]_1 |                1 |              2 |
+|  Clk_IBUF_BUFG                                   |                          |                                                 |                1 |              2 |
+|  I_BAUDGEN/stop_bit_reg                          | I_RS232TX/Tx_i_2_n_0     | I_RS232TX/stop_bit                              |                1 |              2 |
+|  motor/clock_Div/CLK                             |                          | Rst_n_IBUF                                      |                1 |              6 |
+|  motor2/clock_Div/CLK                            |                          | Rst_n_IBUF                                      |                1 |              6 |
+|  I_BAUDGEN/stop_bit_reg                          |                          |                                                 |                2 |              6 |
+|  motor/clock_Div/CLK                             |                          |                                                 |                1 |              8 |
+|  motor2/clock_Div/CLK                            |                          |                                                 |                1 |              8 |
+|  I_BAUDGEN/stop_bit_reg                          | I_RS232TX/State          | I_RS232TX/counter[3]_i_1_n_0                    |                1 |              8 |
+|  I_BAUDGEN/stop_bit_reg                          | I_RS232TX/Bit[4]_i_2_n_0 | I_RS232TX/Bit[4]_i_1_n_0                        |                2 |             10 |
+|  Rx_IBUF_BUFG                                    |                          | I_RS232RX/clear                                 |                5 |             16 |
+|  Clk_IBUF_BUFG                                   |                          | I_BAUDGEN/baudRateReg_reg[0]_0                  |                5 |             38 |
+|  Clk_IBUF_BUFG                                   |                          | Rx_IBUF_BUFG                                    |                7 |             52 |
+|  Clk_IBUF_BUFG                                   |                          | Rst_n_IBUF                                      |               13 |            108 |
++--------------------------------------------------+--------------------------+-------------------------------------------------+------------------+----------------+
+
+

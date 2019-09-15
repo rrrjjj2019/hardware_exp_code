@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Lab3_Clock_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divn
+INFO: [VRFC 10-311] analyzing module Clock_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Clock_Divider_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clock_Divider_t

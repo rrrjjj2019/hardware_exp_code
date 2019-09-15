@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Lab3_Ping_Pong_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ping_Pong_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/Ping_Pong_Counter_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ping_Pong_Counter_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog/hardware_exp/lab3/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

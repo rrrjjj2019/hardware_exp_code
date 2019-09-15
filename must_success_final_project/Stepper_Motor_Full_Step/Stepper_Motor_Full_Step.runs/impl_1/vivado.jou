@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 28 21:39:27 2018
+# Process ID: 22348
+# Current directory: D:/verilog/hardware_exp/must_success_final_project/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1
+# Command line: vivado.exe -log pmod_step_interface.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pmod_step_interface.tcl -notrace
+# Log file: D:/verilog/hardware_exp/must_success_final_project/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.vdi
+# Journal file: D:/verilog/hardware_exp/must_success_final_project/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pmod_step_interface.tcl -notrace

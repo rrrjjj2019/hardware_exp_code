@@ -1,0 +1,22 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/XILINX/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e00d4f36f8654e6fbaea376e4cf69d76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Clock_Divider_t_behav xil_defaultlib.Clock_Divider_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/verilog/hardware_exp/midterm_practice/practice1.v" Line 101. Module Clock_Divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/verilog/hardware_exp/midterm_practice/practice1.v" Line 30. Module divn(N=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/verilog/hardware_exp/midterm_practice/practice1.v" Line 30. Module divn(N=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/verilog/hardware_exp/midterm_practice/practice1.v" Line 30. Module divn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/verilog/hardware_exp/midterm_practice/practice1.v" Line 30. Module divn(N=3) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divn(N=2)
+Compiling module xil_defaultlib.divn(N=4)
+Compiling module xil_defaultlib.divn
+Compiling module xil_defaultlib.divn(N=3)
+Compiling module xil_defaultlib.Clock_Divider
+Compiling module xil_defaultlib.Clock_Divider_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Clock_Divider_t_behav
